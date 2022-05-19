@@ -1,0 +1,624 @@
+/*
+ * @(#)maryobros_en.rcp
+ *
+ * Copyright 2000-2001, Aaron Ardiri     (mailto:aaron@ardiri.com)
+ *                      Charles Kerchner (mailto:timberdogsw@hotmail.com)
+ * All rights reserved.
+ *
+ * This file was generated as part of the "maryobros" program developed 
+ * for the Palm Computing Platform designed by Palm: 
+ *
+ *   http://www.palm.com/ 
+ *
+ * The contents of this file is confidential and proprietrary in nature 
+ * ("Confidential Information"). Redistribution or modification without 
+ * prior consent of the original author is prohibited. 
+ *
+ * --------------------------------------------------------------------
+ *             THIS FILE CONTAINS THE ENGLISH LANGUAGE TEXT
+ * --------------------------------------------------------------------
+ */
+
+#include "resource.h"
+
+ALERT ID resetHighScoresAlert DEFAULTBUTTON 1 WARNING
+BEGIN
+  TITLE "Reset High Scores"
+  MESSAGE "Are you sure you want to reset high scores?"
+  BUTTONS "Yes" "No"
+END
+
+ALERT ID unregisteredAlert DEFAULTBUTTON 0 ERROR
+BEGIN
+  TITLE "UNREGISTERED"
+  MESSAGE "The option you selected is only available to users that have registered the application."
+  BUTTONS "Ok"
+END
+
+ALERT ID gameActiveAlert DEFAULTBUTTON 0 ERROR
+BEGIN
+  TITLE "Game Active"
+  MESSAGE "You are not able to perform that operation while a game is active."
+  BUTTONS "Ok"
+END
+
+FORM ID infoForm AT (2 2 156 156) MODAL
+BEGIN
+  TITLE "About Maryo Bros"
+
+  FORMBITMAP AT (8 16) BITMAP bitmapIcon
+  LABEL "http://www.ardiri.com/" AUTOID AT (50 PrevTop)
+  LABEL "maryobros@ardiri.com" AUTOID AT (40 PrevBottom) FONT 1
+
+  FORMBITMAP AT (88 PrevBottom+4) BITMAP bitmapPalm
+  LABEL "\251 2001" AUTOID AT (8 PrevTop+2)
+  LABEL "ardiri.com" AUTOID AT (8 PrevBottom)
+  LABEL "All rights reserved" AUTOID AT (8 PrevBottom)
+
+  LABEL "Maryo Bros" AUTOID AT (8 PrevBottom+3) FONT 1
+  LABEL "Championship Edition (v1.3.1)" AUTOID AT (8 PrevBottom-1) FONT 1
+
+  LABEL "Nintendo has no involvement with" AUTOID AT (8 PrevBottom+3)
+  LABEL "the development of this software." AUTOID AT (8 PrevBottom)
+
+  BUTTON "Ok" ID infoFormOkButton AT (CENTER 138 40 AUTO)
+END
+
+FORM ID deviForm AT (2 2 156 156) MODAL
+BEGIN
+  TITLE "Incompatability"
+
+  LABEL "the device is incompatible" AUTOID AT (CENTER 20)
+  LABEL "read README.TXT for assistance." AUTOID AT (CENTER PrevTop+11)
+
+  LABEL "http://www.ardiri.com/" AUTOID AT (CENTER PrevTop+15) FONT 1
+
+  LABEL "\251 2001" AUTOID AT (8 PrevTop+20)
+  FORMBITMAP AT (88 PrevTop) BITMAP bitmapPalm
+  LABEL "ardiri.com" AUTOID AT (8 PrevTop+12)
+  LABEL "All rights reserved" AUTOID AT (8 PrevTop+12)
+
+  LABEL "Maryo Bros" AUTOID AT (8 PrevTop+16) FONT 1
+  LABEL "Championship Edition (v1.3.1)" AUTOID AT (8 PrevTop+12) FONT 1
+
+  BUTTON "Ok" AUTOID AT (CENTER 138 40 AUTO)
+END
+
+FORM ID dvlpForm AT (2 2 156 156) MODAL
+BEGIN
+  TITLE "About The Developers"
+
+  FORMBITMAP AT (6 16) BITMAP bitmapPaw
+  LABEL "Charles Kerchner" AUTOID AT (54 PrevTop-2) FONT 1
+  LABEL "http://www.ardiri.com/" AUTOID AT (48 PrevBottom-1)
+  LABEL "chip@ardiri.com" AUTOID AT (60 PrevBottom-1)
+
+  LABEL "- Game Concept and Logistics" AUTOID AT (8 PrevTop+14)
+  LABEL "- Optimizations and Tweaking" AUTOID AT (8 PrevBottom-1)
+
+  FORMBITMAP AT (116 PrevTop+15) BITMAP bitmapPaw
+  LABEL "Aaron Ardiri" AUTOID AT (27 PrevTop) FONT 1
+  LABEL "http://www.ardiri.com/" AUTOID AT (10 PrevBottom-1)
+  LABEL "aaron@ardiri.com" AUTOID AT (20 PrevBottom-1)
+
+  LABEL "- User Interface" AUTOID AT (8 PrevTop+14)
+  LABEL "- Application Framework" AUTOID AT (8 PrevBottom-1)
+
+  BUTTON "Ok" ID dvlpFormOkButton AT (CENTER 138 40 AUTO)
+END
+
+FORM ID cfigForm AT (2 2 156 156) MODAL
+BEGIN
+  TITLE "Configuration"
+
+  FORMBITMAP AT (0 32) BITMAP bitmapKeyConfig
+
+  POPUPTRIGGER "" ID cfigFormHardKey1Trigger AT (4 PrevTop-14 44 AUTO) LEFTANCHOR
+  LIST "------" "Left" "Right" "Jump" ID cfigFormHardKey1List AT (PrevLeft+16 PrevTop 28 16) VISIBLEITEMS 4 NONUSABLE
+  POPUPLIST ID cfigFormHardKey1Trigger cfigFormHardKey1List
+
+  POPUPTRIGGER "" ID cfigFormHardKey4Trigger AT (112 PrevTop 44 AUTO) LEFTANCHOR
+  LIST "------" "Left" "Right" "Jump" ID cfigFormHardKey4List AT (PrevLeft+16 PrevTop 28 16) VISIBLEITEMS 4 NONUSABLE
+  POPUPLIST ID cfigFormHardKey4Trigger cfigFormHardKey4List
+
+  POPUPTRIGGER "" ID cfigFormPageUpTrigger AT (56 PrevTop+8 44 AUTO) LEFTANCHOR
+  LIST "------" "Left" "Right" "Jump" ID cfigFormPageUpList AT (PrevLeft+16 PrevTop 28 16) VISIBLEITEMS 4 NONUSABLE
+  POPUPLIST ID cfigFormPageUpTrigger cfigFormPageUpList
+
+  POPUPTRIGGER "" ID cfigFormHardKey2Trigger AT (24 PrevTop+38 44 AUTO) LEFTANCHOR
+  LIST "------" "Left" "Right" "Jump" ID cfigFormHardKey2List AT (PrevLeft+16 PrevTop 28 16) VISIBLEITEMS 4 NONUSABLE
+  POPUPLIST ID cfigFormHardKey2Trigger cfigFormHardKey2List
+
+  POPUPTRIGGER "" ID cfigFormHardKey3Trigger AT (92 PrevTop 44 AUTO) LEFTANCHOR
+  LIST "------" "Left" "Right" "Jump" ID cfigFormHardKey3List AT (PrevLeft+16 PrevTop 28 16) VISIBLEITEMS 4 NONUSABLE
+  POPUPLIST ID cfigFormHardKey3Trigger cfigFormHardKey3List
+
+  POPUPTRIGGER "" ID cfigFormPageDownTrigger AT (56 PrevTop+12 44 AUTO) LEFTANCHOR
+  LIST "------" "Left" "Right" "Jump" ID cfigFormPageDownList AT (PrevLeft+16 PrevTop 28 16) VISIBLEITEMS 4 NONUSABLE
+  POPUPLIST ID cfigFormPageDownTrigger cfigFormPageDownList
+
+  LABEL "Mode:" AUTOID AT (16 PrevTop+16) FONT 1
+  POPUPTRIGGER "" ID cfigFormDifficultyTrigger AT (60 PrevTop 80 AUTO) LEFTANCHOR
+  LIST "Simple" "Classic Arcade" "Difficult" ID cfigFormDifficultyList AT (PrevLeft+16 PrevTop 64 16) VISIBLEITEMS 3 NONUSABLE
+  POPUPLIST ID cfigFormDifficultyTrigger cfigFormDifficultyList
+
+  LABEL "Sound:" AUTOID AT (16 PrevTop+16) FONT 1
+  PUSHBUTTON "" ID cfigFormSound0Button AT (60 PrevTop+2 9 8) GROUP 1
+  PUSHBUTTON "" ID cfigFormSound1Button AT (PrevLeft+10 PrevTop 9 8) GROUP 1
+  PUSHBUTTON "" ID cfigFormSound2Button AT (PrevLeft+10 PrevTop 9 8) GROUP 1
+  PUSHBUTTON "" ID cfigFormSound3Button AT (PrevLeft+10 PrevTop 9 8) GROUP 1
+  PUSHBUTTON "" ID cfigFormSound4Button AT (PrevLeft+10 PrevTop 9 8) GROUP 1
+  PUSHBUTTON "" ID cfigFormSound5Button AT (PrevLeft+10 PrevTop 9 8) GROUP 1
+  PUSHBUTTON "" ID cfigFormSound6Button AT (PrevLeft+10 PrevTop 9 8) GROUP 1
+  PUSHBUTTON "" ID cfigFormSound7Button AT (PrevLeft+10 PrevTop 9 8) GROUP 1
+  CHECKBOX "Mute Sound" ID cfigFormMuteCheckbox AT (57 PrevTop+12 AUTO AUTO) 
+
+  BUTTON "Ok" ID cfigFormOkButton AT (30 138 40 AUTO)
+  BUTTON "Cancel" ID cfigFormCancelButton AT (90 PrevTop 40 AUTO)
+END
+
+FORM ID grayForm AT (2 2 156 156) MODAL
+BEGIN
+  TITLE "Grayscale Configuration"
+
+  LABEL "Under various lighting conditions" AUTOID AT (CENTER 16)
+  LABEL "grayscale information may be hard" AUTOID AT (CENTER PrevTop+11)
+  LABEL "to read on non-color devices" AUTOID AT (CENTER PrevTop+11)
+
+  LABEL "You can adjust the LCD brightness" AUTOID AT (CENTER PrevTop+16)
+  LABEL "of the grayscale tones below." AUTOID AT (CENTER PrevTop+11)
+
+  FORMBITMAP AT (4 PrevTop+16) BITMAP bitmapGrayscaleTest
+
+  PUSHBUTTON "" ID grayWhite1Button AT (68 PrevTop+1 11 8) DISABLED GROUP 1
+  PUSHBUTTON "" ID grayWhite2Button AT (PrevLeft+12 PrevTop 11 8) DISABLED GROUP 1
+  PUSHBUTTON "" ID grayWhite3Button AT (PrevLeft+12 PrevTop 11 8) DISABLED GROUP 1
+  PUSHBUTTON "" ID grayWhite4Button AT (PrevLeft+12 PrevTop 11 8) DISABLED GROUP 1
+  PUSHBUTTON "" ID grayWhite5Button AT (PrevLeft+12 PrevTop 11 8) DISABLED GROUP 1
+  PUSHBUTTON "" ID grayWhite6Button AT (PrevLeft+12 PrevTop 11 8) DISABLED GROUP 1
+  PUSHBUTTON "" ID grayWhite7Button AT (PrevLeft+12 PrevTop 11 8) DISABLED GROUP 1
+
+  PUSHBUTTON "" ID grayLightGray1Button AT (68 PrevTop+12 11 8) GROUP 2
+  PUSHBUTTON "" ID grayLightGray2Button AT (PrevLeft+12 PrevTop 11 8) GROUP 2
+  PUSHBUTTON "" ID grayLightGray3Button AT (PrevLeft+12 PrevTop 11 8) GROUP 2
+  PUSHBUTTON "" ID grayLightGray4Button AT (PrevLeft+12 PrevTop 11 8) GROUP 2
+  PUSHBUTTON "" ID grayLightGray5Button AT (PrevLeft+12 PrevTop 11 8) GROUP 2
+  PUSHBUTTON "" ID grayLightGray6Button AT (PrevLeft+12 PrevTop 11 8) GROUP 2
+  PUSHBUTTON "" ID grayLightGray7Button AT (PrevLeft+12 PrevTop 11 8) GROUP 2
+  
+  PUSHBUTTON "" ID grayDarkGray1Button AT (68 PrevTop+12 11 8) GROUP 3
+  PUSHBUTTON "" ID grayDarkGray2Button AT (PrevLeft+12 PrevTop 11 8) GROUP 3
+  PUSHBUTTON "" ID grayDarkGray3Button AT (PrevLeft+12 PrevTop 11 8) GROUP 3
+  PUSHBUTTON "" ID grayDarkGray4Button AT (PrevLeft+12 PrevTop 11 8) GROUP 3
+  PUSHBUTTON "" ID grayDarkGray5Button AT (PrevLeft+12 PrevTop 11 8) GROUP 3
+  PUSHBUTTON "" ID grayDarkGray6Button AT (PrevLeft+12 PrevTop 11 8) GROUP 3
+  PUSHBUTTON "" ID grayDarkGray7Button AT (PrevLeft+12 PrevTop 11 8) GROUP 3
+
+  PUSHBUTTON "" ID grayBlack1Button AT (68 PrevTop+12 11 8) DISABLED GROUP 4
+  PUSHBUTTON "" ID grayBlack2Button AT (PrevLeft+12 PrevTop 11 8) DISABLED GROUP 4
+  PUSHBUTTON "" ID grayBlack3Button AT (PrevLeft+12 PrevTop 11 8) DISABLED GROUP 4
+  PUSHBUTTON "" ID grayBlack4Button AT (PrevLeft+12 PrevTop 11 8) DISABLED GROUP 4
+  PUSHBUTTON "" ID grayBlack5Button AT (PrevLeft+12 PrevTop 11 8) DISABLED GROUP 4
+  PUSHBUTTON "" ID grayBlack6Button AT (PrevLeft+12 PrevTop 11 8) DISABLED GROUP 4
+  PUSHBUTTON "" ID grayBlack7Button AT (PrevLeft+12 PrevTop 11 8) DISABLED GROUP 4
+
+  BUTTON "Ok" ID grayFormOkButton AT (CENTER 138 40 AUTO)
+END
+
+#ifdef PROTECTION_ON
+FORM ID regiForm AT (2 2 156 156) MODAL
+BEGIN
+  TITLE "Registration"
+
+  FORMBITMAP AT (0 16) BITMAP bitmapPGHQ
+  LABEL "sales: +1 800.741.9070" AUTOID AT (CENTER PrevTop+32) FONT 1
+
+  LABEL "- copy exactly as shown -" AUTOID AT (CENTER PrevTop+30) FONT 1 
+
+  LABEL "Registration supports the" AUTOID AT (CENTER PrevTop+16)
+  LABEL "developer and ensures you get" AUTOID AT (CENTER PrevTop+12) 
+  LABEL "the most out of the software." AUTOID AT (CENTER PrevTop+12) 
+
+  BUTTON "Ok" ID regiFormOkButton AT (CENTER 138 40 AUTO)
+END
+
+FORM ID rbugForm AT (2 2 156 156) MODAL
+BEGIN
+  TITLE "Sorry! - Game Over"
+
+  FORMBITMAP AT (0 16) BITMAP bitmapPGHQ
+  LABEL "sales: +1 800.741.9070" AUTOID AT (CENTER PrevTop+32) FONT 1
+
+  LABEL "Do you want to play more?" AUTOID AT (CENTER PrevTop+18) 
+  LABEL "Support Shareware!" AUTOID AT (CENTER PrevTop+12) FONT 1
+
+  LABEL "Registration supports the" AUTOID AT (CENTER PrevTop+18) 
+  LABEL "developer and ensures you get" AUTOID AT (CENTER PrevTop+12) 
+  LABEL "the most out of the software." AUTOID AT (CENTER PrevTop+12) 
+
+  BUTTON "Ok" ID rbugFormOkButton AT (CENTER 138 40 AUTO)
+END
+#endif
+
+FORM ID highForm AT (2 2 156 156) MODAL
+BEGIN
+  TITLE "Register Your Score"
+
+  FORMBITMAP AT (6 16) BITMAP bitmapPaw
+  LABEL "http://www.ardiri.com/" AUTOID AT (50 PrevTop)
+  LABEL "maryobros@ardiri.com" AUTOID AT (40 PrevBottom) FONT 1
+
+  LABEL "Score:" AUTOID AT (40 PrevTop+22) FONT 1
+  FIELD ID highFormScoreField AT (94 PrevTop 48 AUTO) NONEDITABLE SINGLELINE MAXCHARS 10
+  LABEL "Level:" AUTOID AT (40 PrevTop+12) FONT 1
+  FIELD ID highFormPlayingField AT (94 PrevTop 48 AUTO) NONEDITABLE SINGLELINE MAXCHARS 10
+  LABEL "Code:" AUTOID AT (40 PrevTop+12) FONT 1
+  FIELD ID highFormCodeField AT (94 PrevTop 48 AUTO) NONEDITABLE SINGLELINE MAXCHARS 5
+
+  LABEL "Email the above information to the" AUTOID AT (CENTER PrevTop+16)
+  LABEL "address shown to be included in the" AUTOID AT (CENTER PrevTop+12)
+  LABEL "worldwide highscore table." AUTOID AT (CENTER PrevTop+12)
+
+  BUTTON "Ok" ID highFormOkButton AT (CENTER 138 40 AUTO)
+END
+
+FORM ID helpForm AT (2 2 156 156) MODAL
+BEGIN
+  TITLE "Instructions"
+
+  SCROLLBAR ID helpFormScrollBar AT (147 16 7 116) VALUE 0 MIN 0 MAX 0 PAGESIZE 100
+
+  BUTTON "Done" ID helpFormOkButton AT (6 138 AUTO AUTO)
+  LABEL "\251 ardiri.com" AUTOID AT (92 PrevTop+1) FONT 1
+END
+
+FORM ID xmemForm AT (2 2 156 156) MODAL
+BEGIN
+  TITLE "System Memory"
+
+  FORMBITMAP AT (6 20) BITMAP bitmapPaw
+  LABEL "http://www.ardiri.com/" AUTOID AT (50 PrevTop+4)
+  LABEL "support@ardiri.com" AUTOID AT (46 PrevBottom) FONT 1
+
+  LABEL "Insufficent memory available to" AUTOID AT (CENTER PrevTop+24)
+  LABEL "do the operation you requested." AUTOID AT (CENTER PrevTop+12)
+
+  LABEL "Please disable any unecessary" AUTOID AT (CENTER PrevTop+20)
+  LABEL "hacks and try using the standard" AUTOID AT (CENTER PrevTop+12)
+  LABEL "application launcher of the device." AUTOID AT (CENTER PrevTop+12)
+
+  BUTTON "Ok" ID xmemFormOkButton AT (CENTER 138 40 AUTO)
+END
+
+FORM ID mainForm AT (0 0 160 160) NOSAVEBEHIND
+BEGIN
+  TITLE "Maryo Bros"
+
+  BUTTON "" ID globalFormHelpButton AT (133 0 12 12) NOFRAME
+  FORMBITMAP AT (PrevLeft PrevTop) BITMAP bitmapHelp
+  BUTTON "" ID globalFormAboutButton AT (PrevLeft+14 PrevTop 12 12) NOFRAME
+  FORMBITMAP AT (PrevLeft PrevTop) BITMAP bitmapAbout
+
+  FORMBITMAP AT (0 126) BITMAP bitmapMainAbout
+END
+
+#ifdef PROTECTION_ON
+MENU ID mainMenu_nogray
+BEGIN
+  PULLDOWN "Game"
+  BEGIN
+    MENUITEM "Play"          mainMenuItemPlay      "P"
+    MENUITEM SEPARATOR
+    MENUITEM "Configuration" menuItemConfig        "C"
+    MENUITEM "Register"      menuItemRegister      "R"
+  END
+  PULLDOWN "Score"
+  BEGIN
+    MENUITEM "High Score"    mainMenuItemShowHigh  "H"
+    MENUITEM SEPARATOR
+    MENUITEM "Reset Scores"  mainMenuItemResetHigh "X"
+  END
+  PULLDOWN "Help"
+  BEGIN
+    MENUITEM "Instructions"  menuItemHelp          "I"
+    MENUITEM SEPARATOR
+    MENUITEM "Developers"    menuItemDeveloper     "A"
+    MENUITEM "About"         menuItemAbout
+  END
+END
+
+MENU ID mainMenu_gray
+BEGIN
+  PULLDOWN "Game"
+  BEGIN
+    MENUITEM "Play"          mainMenuItemPlay      "P"
+    MENUITEM SEPARATOR
+    MENUITEM "Grayscale"     menuItemGrayscale     "G"
+    MENUITEM SEPARATOR
+    MENUITEM "Configuration" menuItemConfig        "C"
+    MENUITEM "Register"      menuItemRegister      "R"
+  END
+  PULLDOWN "Score"
+  BEGIN
+    MENUITEM "High Score"    mainMenuItemShowHigh  "H"
+    MENUITEM SEPARATOR
+    MENUITEM "Reset Scores"  mainMenuItemResetHigh "X"
+  END
+  PULLDOWN "Help"
+  BEGIN
+    MENUITEM "Instructions"  menuItemHelp          "I"
+    MENUITEM SEPARATOR
+    MENUITEM "Developers"    menuItemDeveloper     "A"
+    MENUITEM "About"         menuItemAbout
+  END
+END
+#else
+MENU ID mainMenu_nogray
+BEGIN
+  PULLDOWN "Game"
+  BEGIN
+    MENUITEM "Play"          mainMenuItemPlay      "P"
+    MENUITEM SEPARATOR
+    MENUITEM "Configuration" menuItemConfig        "C"
+  END
+  PULLDOWN "Score"
+  BEGIN
+    MENUITEM "High Score"    mainMenuItemShowHigh  "H"
+    MENUITEM SEPARATOR
+    MENUITEM "Reset Scores"  mainMenuItemResetHigh "X"
+  END
+  PULLDOWN "Help"
+  BEGIN
+    MENUITEM "Instructions"  menuItemHelp          "I"
+    MENUITEM SEPARATOR
+    MENUITEM "Developers"    menuItemDeveloper     "A"
+    MENUITEM "About"         menuItemAbout
+  END
+END
+
+MENU ID mainMenu_gray
+BEGIN
+  PULLDOWN "Game"
+  BEGIN
+    MENUITEM "Play"          mainMenuItemPlay      "P"
+    MENUITEM SEPARATOR
+    MENUITEM "Grayscale"     menuItemGrayscale     "G"
+    MENUITEM SEPARATOR
+    MENUITEM "Configuration" menuItemConfig        "C"
+  END
+  PULLDOWN "Score"
+  BEGIN
+    MENUITEM "High Score"    mainMenuItemShowHigh  "H"
+    MENUITEM SEPARATOR
+    MENUITEM "Reset Scores"  mainMenuItemResetHigh "X"
+  END
+  PULLDOWN "Help"
+  BEGIN
+    MENUITEM "Instructions"  menuItemHelp          "I"
+    MENUITEM SEPARATOR
+    MENUITEM "Developers"    menuItemDeveloper     "A"
+    MENUITEM "About"         menuItemAbout
+  END
+END
+#endif
+
+FORM ID gameForm AT (0 0 160 160) NOSAVEBEHIND
+BEGIN
+  TITLE "Maryo Bros"
+
+  BUTTON "" ID globalFormHelpButton AT (133 0 12 12) NOFRAME
+  FORMBITMAP AT (PrevLeft PrevTop) BITMAP bitmapHelp
+  BUTTON "" ID globalFormAboutButton AT (PrevLeft+14 PrevTop 12 12) NOFRAME
+  FORMBITMAP AT (PrevLeft PrevTop) BITMAP bitmapAbout
+
+  BUTTON "" ID gameFormSoundButton AT (0 148 12 12) NOFRAME
+  FORMBITMAP AT (PrevLeft PrevTop) BITMAP bitmapSound
+  BUTTON "" ID gameFormPauseButton AT (PrevLeft+14 PrevTop 12 12) NOFRAME
+  FORMBITMAP AT (PrevLeft PrevTop) BITMAP bitmapPause
+
+  LABEL "\251 ardiri.com" AUTOID AT (96 PrevTop) FONT 1
+END
+
+#ifdef PROTECTION_ON
+MENU ID gameMenu_nogray
+BEGIN
+  PULLDOWN "Game"
+  BEGIN
+    MENUITEM "Pause"         gameMenuItemPause     "P"
+    MENUITEM SEPARATOR
+    MENUITEM "Exit"          gameMenuItemExit      "X"
+    MENUITEM SEPARATOR
+    MENUITEM "Configuration" menuItemConfig        "C"
+    MENUITEM "Register"      menuItemRegister      "R"
+  END
+  PULLDOWN "Help"
+  BEGIN
+    MENUITEM "Instructions"  menuItemHelp          "I"
+    MENUITEM SEPARATOR
+    MENUITEM "Developers"    menuItemDeveloper     "A"
+    MENUITEM "About"         menuItemAbout
+  END
+END
+
+MENU ID gameMenu_gray
+BEGIN
+  PULLDOWN "Game"
+  BEGIN
+    MENUITEM "Pause"         gameMenuItemPause     "P"
+    MENUITEM SEPARATOR
+    MENUITEM "Exit"          gameMenuItemExit      "X"
+    MENUITEM SEPARATOR
+    MENUITEM "Grayscale"     menuItemGrayscale     "G"
+    MENUITEM SEPARATOR
+    MENUITEM "Configuration" menuItemConfig        "C"
+    MENUITEM "Register"      menuItemRegister      "R"
+  END
+  PULLDOWN "Help"
+  BEGIN
+    MENUITEM "Instructions"  menuItemHelp          "I"
+    MENUITEM SEPARATOR
+    MENUITEM "Developers"    menuItemDeveloper     "A"
+    MENUITEM "About"         menuItemAbout
+  END
+END
+#else
+MENU ID gameMenu_nogray
+BEGIN
+  PULLDOWN "Game"
+  BEGIN
+    MENUITEM "Pause"         gameMenuItemPause     "P"
+    MENUITEM SEPARATOR
+    MENUITEM "Exit"          gameMenuItemExit      "X"
+    MENUITEM SEPARATOR
+    MENUITEM "Configuration" menuItemConfig        "C"
+  END
+  PULLDOWN "Help"
+  BEGIN
+    MENUITEM "Instructions"  menuItemHelp          "I"
+    MENUITEM SEPARATOR
+    MENUITEM "Developers"    menuItemDeveloper     "A"
+    MENUITEM "About"         menuItemAbout
+  END
+END
+
+MENU ID gameMenu_gray
+BEGIN
+  PULLDOWN "Game"
+  BEGIN
+    MENUITEM "Pause"         gameMenuItemPause     "P"
+    MENUITEM SEPARATOR
+    MENUITEM "Exit"          gameMenuItemExit      "X"
+    MENUITEM SEPARATOR
+    MENUITEM "Grayscale"     menuItemGrayscale     "G"
+    MENUITEM SEPARATOR
+    MENUITEM "Configuration" menuItemConfig        "C"
+  END
+  PULLDOWN "Help"
+  BEGIN
+    MENUITEM "Instructions"  menuItemHelp          "I"
+    MENUITEM SEPARATOR
+    MENUITEM "Developers"    menuItemDeveloper     "A"
+    MENUITEM "About"         menuItemAbout
+  END
+END
+#endif
+
+VERSION "1.3.1"
+
+ICONFAMILY 
+  "images/icon1bpp.bmp" "images/icon2bpp.bmp" "" "images/icon8bpp.bmp" 
+TRANSPARENCY 255 0 0
+
+SMALLICONFAMILY
+  "images/smic1bpp.bmp" "images/smic2bpp.bmp" "" "images/smic8bpp.bmp"
+TRANSPARENCY 255 0 0
+
+BITMAPFAMILYSPECIAL bitmapIcon   
+  "" "images/icon2bpp.bmp" "images/icon4bpc.bmp" "images/icon8bpp.bmp" COMPRESS
+TRANSPARENCY 255 0 0
+
+#ifdef PROTECTION_ON
+BITMAPFAMILYSPECIAL bitmapPGHQ
+  "" "images/pghq2bpp.bmp" "images/pghq4bpc.bmp" COMPRESS
+#endif
+
+BITMAPGREY bitmapPaw "images/_paw2bpp.bmp" COMPRESS
+
+BITMAPFAMILYSPECIAL bitmapPalm
+  "images/palm1bpp.bmp" "images/palm2bpp.bmp" "images/palm4bpc.bmp" COMPRESS
+
+BITMAP bitmapAbout "images/info1bpp.bmp" COMPRESS
+BITMAP bitmapHelp  "images/help1bpp.bmp" COMPRESS
+BITMAP bitmapSound "images/snd1bpp.bmp"  COMPRESS
+BITMAP bitmapPause "images/paws1bpp.bmp" COMPRESS
+
+BITMAPGREY bitmapGrayscaleTest "images/gray2bpp.bmp" COMPRESS
+BITMAPGREY bitmapKeyConfig "images/keys2bpp.bmp" COMPRESS
+
+BITMAPFAMILYSPECIAL bitmapMainAbout 
+  "" "images/mabt2bpp.bmp" "images/mabt4bpc.bmp" COMPRESS
+BITMAPFAMILYSPECIAL bitmapHelpCharacters 
+  "" "images/hlp12bpp.bmp" "images/hlp14bpc.bmp" COMPRESS
+
+// Characters
+DATA "char"  ID dataCharacterTiles "images/gamedata/char.chr"
+
+// Color Tables & Palette
+DATA "ctbl"  ID dataColorTablePalette "images/gamedata/color.tbl"
+
+// Character Masks
+DATA "char"  ID dataCharacterMasks "images/gamedata/char.msk"
+
+// Sprites
+// Piper sprites
+DATA "pipr"  ID dataMaryoSprites "images/gamedata/piper.dat"
+
+// Turtle sprites
+DATA "turt"  ID dataTurtleSprites "images/gamedata/turtle.dat"
+
+// Crab sprites
+DATA "crab"  ID dataCrabSprites "images/gamedata/crab.dat"
+
+// Fighter Fly sprites
+DATA "ffly"  ID dataFighterFlySprites "images/gamedata/fightfly.dat"
+
+// Coin sprites
+DATA "coin"  ID dataCoinSprites "images/gamedata/coin.dat"
+
+// Ice Machine sprites
+DATA "icem"  ID dataIceMachineSprites "images/gamedata/icemach.dat"
+
+// Fire Ball sprites
+DATA "firb"  ID dataFireBallSprites "images/gamedata/fireball.dat"
+
+// Paint Ball sprites
+DATA "pntb"  ID dataPaintBallSprites "images/gamedata/pntball.dat"
+
+// Icicle sprites
+DATA "icic"  ID dataIcicleSprites "images/gamedata/icicle.dat"
+
+// Pow sprites
+DATA "powb"  ID dataPowSprites "images/gamedata/pow.dat"
+
+// Masks
+// Piper masks
+DATA "pipr"  ID dataMaryoMasks "images/gamedata/piper.msk"
+
+// Turtle masks
+DATA "turt"  ID dataTurtleMasks "images/gamedata/turtle.msk"
+
+// Crab masks
+DATA "crab"  ID dataCrabMasks "images/gamedata/crab.msk"
+
+// Fighter Fly masks
+DATA "ffly"  ID dataFighterFlyMasks "images/gamedata/fightfly.msk"
+
+// Coin masks
+DATA "coin"  ID dataCoinMasks "images/gamedata/coin.msk"
+
+// Ice Machine masks
+DATA "icem"  ID dataIceMachineMasks "images/gamedata/icemach.msk"
+
+// Fire Ball masks
+DATA "firb"  ID dataFireBallMasks "images/gamedata/fireball.msk"
+
+// Paint Ball masks
+DATA "pntb"  ID dataPaintBallMasks "images/gamedata/pntball.msk"
+
+// Icicle masks
+DATA "icic"  ID dataIcicleMasks "images/gamedata/icicle.msk"
+
+// Pow masks
+DATA "powb"  ID dataPowMasks "images/gamedata/pow.msk"
+
+// Flip masks
+DATA "flip"  ID dataFlipMasks "images/gamedata/flip.msk"
+
+// Animation sprites
+DATA "anim"  ID dataAnimationSprites "images/gamedata/anim.dat"
+
+// Animation masks
+DATA "anim"  ID dataAnimationMasks "images/gamedata/anim.msk"
+
+// Music and sound effects
+DATA "musc"  ID dataMusic "images/gamedata/music.dat"

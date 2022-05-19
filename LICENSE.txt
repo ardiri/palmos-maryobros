@@ -1,0 +1,49 @@
+----------------------------------------------------------------------------
+ Maryo Bros: Championship Edition
+----------------------------------------------------------------------------
+
+  Aaron Ardiri
+  Electronic End User License Agreement
+  Maryo Bros: Championship Edition
+
+  This Aaron Ardiri  ("Aaron Ardiri") End User License Agreement  ("EULA")
+  accompanies the  Maryo Bros  product ("Software").  Read  this agreement
+  carefully.  If you do  not wish to  accept  this agreement,  you may not
+  install or use this Software on a device, simulator or  emulator  of the
+  Palm Computing Platform.
+
+  1. Use of Software
+  You may install the Software  on a device,  simulator or emulator of the
+  Palm Computing Platform and distribute unmodified copies of the Software
+  freely.  Each copy that is distributed  must contain this  agreement and 
+  any other  documentation pertaining to this Software.  You may not offer
+  versions of  this Software for download or  other means of  distribution 
+  without the prior consent of Aaron Ardiri. You  may not charge a fee for 
+  the distribution of this Software on any media with the exception of the 
+  cost of the media that it is supplied on or with.  In the case where the
+  medium  is physical,  on production,  a complimentary  copy of the media 
+  shall be supplied to Aaron Ardiri free of charge. 
+
+  Aaron Ardiri may be contacted by email at:              aaron@ardiri.com
+
+  2. Copyright
+  The Software is owned by Aaron Ardiri.  Its structure,  presentation and 
+  source code  are valuable trade secrets of Aaron Ardiri.  This agreement 
+  does not grant you intellectual property rights in the Software.
+
+  3. Restrictions
+  You agree not to modify, adapt, translate, reverse engineer,  decompile,
+  dissasemble  or otherwise attempt to discover the code and algorithms of 
+  the Software.
+
+  4. No Warranty
+  THE SOFTWARE IS DELIVERED AS IS AND AARON ARDIRI MAKES NO WARRANTY AS TO
+  ITS  USE OR PERFORMANCE.  AARON ARDIRI DOES NOT,  AND CANNOT WARRANT THE
+  PERFORMANCE  OR RESULTS  YOU MAY  OBTAIN BY USING THE  SOFTWARE  OR  ITS
+  DOCUMENTATION. AARON ARDIRI MAKES NO WARRANTIES, EXPRESS OR IMPLIED,  AS
+  TO NONINFRINGEMENT OF  THIRD PARTY RIGHTS,  MERCHANTABILITY,  OR FITNESS
+  FOR ANY PARTICULAR PURPOSE.  IN NO EVENT WILL AARON  ARDIRI BE LIABLE TO
+  YOU FOR ANY  CONSEQUENTIAL,  INCIDENTAL OR  SPECIAL DAMAGES,  OR FOR ANY
+  CLAIM BY ANY THIRD PARTY.
+
+----------------------------------------------------------------------------
